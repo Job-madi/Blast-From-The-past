@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: var(--clr-background);
+    /* background-color: var(--clr-background); */
     max-height: 100vh;
 }
 
@@ -92,8 +92,12 @@ button {
     padding: 0.5rem 4.5rem;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
 }
 
+button:hover{
+    opacity: 0.8;
+}
 
 .juke-1{
     position: absolute;
@@ -133,3 +137,47 @@ button {
     left: 50px;
 }
 
+#background {
+	background: black url(./resources/background.png) repeat 5% 5%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: -30;
+	
+	animation-name: STAR-MOVE;
+	animation-duration: 200s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#midground {
+	background: url(./resources/midground.png) repeat 20% 20%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: -20;
+	
+	animation-name: STAR-MOVE;
+	animation-duration: 150s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#foreground {
+	background: url(./resources/foreground.png) repeat 35% 35%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: -10;
+	
+	animation-name: STAR-MOVE;
+	animation-duration: 100s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes STAR-MOVE {
+	from {
+		background-position: 5% 5%
+	}
+	to { 
+		background-position: 1300% 600%
+	}
+}
