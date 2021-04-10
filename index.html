@@ -7,43 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Back to the Future</title>
     <link rel="stylesheet" href="indexStyle.css">
+    <script type="application/javascript" src="index.js"></script>
 </head>
 
 <body>
 
     <div id="overlay"><img id="myImage" src="Images\e170f49b85996b4f87c0eef4a8309e66.gif"></div>
     <audio id="aud" controls autoplay>
-        <source src="audio\Rick_Astley_-_Never_Gonna_Give_You_Up_Qoret.com.mp3" type="audio/mpeg">
+        <source src="audio\Rick_Astley_-_Never_Gonna_Give_You_Up_Qoret.com.mp3" type="audio/mp3">
 
         Your browser does not support the audio element.
     </audio>
-    <script type="text/javascript">
-
-        //Take out car image after 5 seconds
-        setTimeout(function () {
-
-            document.getElementById("overlay").style.display = "none";
-
-        }, 6000);  // 5 seconds
-
-
-        //Following plays the song then stops it
-        var myaud = document.getElementById("aud");
-        var k = setInterval("pauseAud()", 6000);
-
-        function playAud() {
-            myaud.play();
-        }
-
-        function pauseAud() {
-            myaud.pause();
-
-            clearInterval(k);
-        }
-        
-
-
-    </script>
+    
 
 
 
