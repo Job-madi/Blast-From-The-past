@@ -1,0 +1,34 @@
+body{
+  background-color: black;
+  
+}
+
+.title{
+  font-family: fantasy;
+  font-size: 70px;
+  color: pink;
+}
+
+.button{
+
+  height: 80px;
+  width: 80px;
+  color: white;
+  opacity: 0.0;
+}
+.button1{
+
+
+    background-color: #ffffff00;
+  font-family: sans-serif;
+    border-radius: 20px;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    border-style: solid;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
