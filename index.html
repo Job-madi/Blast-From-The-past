@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back to the Future</title>
+    <link rel="stylesheet" href="indexStyle.css">
+</head>
+
+<body>
+
+    <div id="overlay"><img id="myImage" src="Images\e170f49b85996b4f87c0eef4a8309e66.gif"></div>
+    <audio id="aud" controls autoplay>
+        <source src="audio\Rick_Astley_-_Never_Gonna_Give_You_Up_Qoret.com.mp3" type="audio/mpeg">
+
+        Your browser does not support the audio element.
+    </audio>
+    <script type="text/javascript">
+
+        //Take out car image after 5 seconds
+        setTimeout(function () {
+
+            document.getElementById("overlay").style.display = "none";
+            
+        }, 6000);  // 5 seconds
+
+
+        //Following plays the song then stops it
+        var myaud = document.getElementById("aud");
+        var k = setInterval("pauseAud()", 6000);
+        setTimeout("aud_fade()", 6000);
+        function playAud() {
+            myaud.play();
+        }
+
+       /* function pauseAud() {
+            myaud.pause();
+
+            clearInterval(k);
+        }*/
+
+        function aud_fade(){
+        var timer,
+        if (myaud.volume > 0) {
+            myaud.volume -= 0.005;
+            timer = setTimeout(aud_fade,5);
+        }
+
+
+    }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
