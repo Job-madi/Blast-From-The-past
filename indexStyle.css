@@ -1,0 +1,17 @@
+
+
+
+#myImage{
+height: 100%;
+width: 100%;
+}
+
+#overlay{
+    background: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+    
+}
