@@ -30,39 +30,39 @@ s2 = 2;
 
 function nextSlide(e) {
     const middleImg = middle.children[0]
-    middleImg.src = images[(m + 1)%3]
+    middleImg.src = images[(m + 1)%4]
     m += 1
     
     const side1Img = side1.children[0]
-    side1Img.src = images[(s1+1)%3]
+    side1Img.src = images[(s1+1)%4]
     s1 += 1
 
     const side2Img = side2.children[0]
-    side2Img.src = images[(s2+1)%3]
+    side2Img.src = images[(s2+1)%4]
     s2 += 1
 
 }
 
 function prevSlide(e) {
-    if(m < 0){
-        m = 3
+    if(m <= 0){
+        m = 4
     }
-    if(s1 < 0){
-        s1 = 3
+    if(s1 <= 0){
+        s1 = 4
     }
-    if(s2 < 0){
-        s2 = 3
+    if(s2 <= 0){
+        s2 = 4
     }
     const middleImg = middle.children[0]
-    middleImg.src = images[(m - 1)%3]
+    middleImg.src = images[(m - 1)%4]
     m -= 1
     
     const side1Img = side1.children[0]
-    side1Img.src = images[(s1-1)%3]
+    side1Img.src = images[(s1-1)%4]
     s1 -= 1
 
     const side2Img = side2.children[0]
-    side2Img.src = images[(s2-1)%3]
+    side2Img.src = images[(s2-1)%4]
     s2 -= 1
 
 }
