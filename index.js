@@ -15,7 +15,7 @@ function playAud() {
 }
 
 function pauseAud() {
-    myaud.pause();
+    //myaud.pause();
 
     clearInterval(k);
 }
