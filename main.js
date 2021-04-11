@@ -75,7 +75,7 @@ class BasicWorldDemo {
     //cube 1
     const geometry = new THREE.BoxGeometry( 25, 20, 20);
 
-    //adding texture 
+    //adding texture
     const textureCube = new THREE.TextureLoader().load('resources/timetravel.png');
 
     const material = new THREE.MeshBasicMaterial( {map: textureCube} );
@@ -87,22 +87,22 @@ class BasicWorldDemo {
 
     //cube 2
     const geometry2 = new THREE.BoxGeometry( 25, 20, 20);
-      //adding texture 
+      //adding texture
       const textureCube2 = new THREE.TextureLoader().load('resources/dive.png');
 
       const material2 = new THREE.MeshBasicMaterial( {map: textureCube2} );
-    
+
     const cube2 = new THREE.Mesh( geometry2, material2 );
     cube2.position.set(10,10,20)
     this._scene.add( cube2 );
 
     const domEvents = new THREEx.DomEvents(this._camera, this._threejs.domElement)
     domEvents.addEventListener(cube, 'click', event => {
-      window.location.replace('/aracade.html')
+      window.location.replace('/gameStarter.html')
     })
 
     domEvents.addEventListener(cube2, 'click', event => {
-      window.location.replace('/timeline.html')
+      window.location.replace('/Timeline/timeline.html')
     })
 
     this._RAF();
@@ -114,7 +114,7 @@ class BasicWorldDemo {
     this._threejs.setSize(window.innerWidth, window.innerHeight);
   }
 
-  
+
 
   _RAF() {
     requestAnimationFrame(() => {
