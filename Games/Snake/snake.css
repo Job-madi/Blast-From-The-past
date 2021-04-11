@@ -1,8 +1,18 @@
 body {
-    background-color: darkslategrey;
+
+  background-image: url("bgdim.gif");
+    background-color: black;
     text-align: center;
   }
-  
+
+
+  .title{
+    font-family: fantasy;
+    font-size: 70px;
+    color: pink;
+  }
+
+
   /* GAME BOARD STYLES */
   #gameContainer {
     /*
@@ -15,12 +25,12 @@ body {
     background-color: #0c1021;
     border: solid 10px slategrey;
     border-radius: 10px;
-  
+
     -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
   }
-  
+
   .gameBoardPixel {
     /* background-color: slategrey; */
     /*
@@ -33,20 +43,20 @@ body {
     float: left;
   }
   /* GAME BOARD STYLES END*/
-  
+
   /* SNAKE STYLES */
   .snakeBodyPixel {
     background-color: #fd6401;
     box-shadow: 0 0 5px #fd6401;
   }
   /* SNAKE STYLES END*/
-  
+
   /* FOOD STYLES */
   .food {
     background-color: #68e768;
   }
   /* FOOD STYLES END*/
-  
+
   /* SCORE STYLES */
   #scoreContainer {
     width: 40vw;
@@ -54,27 +64,29 @@ body {
     margin: auto;
     justify-content: space-around;
   }
-  
+
+
   .scoreBoard {
     border-radius: 10px;
-    border: solid 5px slategrey;
-    color: dimgray;
+    border: solid 5px blue;
+    color: white;
+
     background-color: #0c1021;
     display: inline-block;
     padding: 1vw;
     width: 40%;
-  
+
     -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
     box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.6);
   }
   /* SCORE STYLES END */
-  
+
   /* Hide #onScreenControllers on desktop */
   #onScreenControllers {
     display: none;
   }
-  
+
   .developerDetails {
     margin-top: 2vw;
     display: flex;
@@ -82,27 +94,31 @@ body {
     color: #0c1021;
     font-family: monospace;
   }
-  
+
+
   .developerDetails a {
     color: #0c1021;
   }
-  
+
+
   @media only screen and (max-width: 768px) {
     /* MOBILE */
     #gameContainer {
       width: 80vw;
       height: 80vw;
     }
-  
+
     .gameBoardPixel {
       width: 2vw;
       height: 2vw;
     }
-  
+
+
     #scoreContainer {
       width: 80vw;
     }
-  
+
+
     #onScreenControllers {
       width: 80vw;
       margin: 5vw auto;
@@ -110,12 +126,12 @@ body {
       justify-content: space-evenly;
       align-items: center;
     }
-  
+
     #onScreenControllers > div {
       display: flex;
       flex-direction: column;
     }
-  
+
     #onScreenControllers button {
       background-color: transparent;
       height: 20vw;
@@ -123,12 +139,14 @@ body {
       font-size: 10vw;
       border: none;
     }
-  
+
+
     #onScreenControllers button:focus {
       outline: none;
     }
-  
+
     #onScreenControllers button:active {
-      background-color: slategray;
+      background-color: blue;
     }
   }
+

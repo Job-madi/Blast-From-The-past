@@ -1,3 +1,13 @@
+
+window.addEventListener("keydown", function(e) {
+    if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
+
+
+
+
 const GAME_PIXEL_COUNT = 40;
 const SQUARE_OF_GAME_PIXEL_COUNT = Math.pow(GAME_PIXEL_COUNT, 2);
 
@@ -168,4 +178,6 @@ const downButton = document.getElementById("downButton");
 leftButton.onclick = () => changeDirection(LEFT_DIR);
 rightButton.onclick = () => changeDirection(RIGHT_DIR);
 upButton.onclick = () => changeDirection(UP_DIR);
+
 downButton.onclick = () => changeDirection(DOWN_DIR);
+
