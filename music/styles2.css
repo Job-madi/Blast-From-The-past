@@ -1,0 +1,63 @@
+
+.body5{ /* happpy */
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #15120D;
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/3780104/pexels-photo-3780104.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+
+
+.title{
+  color: white;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+.button {
+  background-color: black;
+  opacity: 0.7;
+  font-family: sans-serif;
+  border-radius: 10px;
+  color: white;
+  width: 200px;
+  padding: 20px;
+  border-style: solid ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button:hover{
+opacity: 0.5;
+}
+
+.footer {
+  float: left;
+ padding-bottom: 0;
+ padding-top: 10px;
+ text-align: center;
+ bottom: 0px;
+ width: 100%;
+
+   background-color: #0000;
+   color: white;
+   text-align: center;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+} */
