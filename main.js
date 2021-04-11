@@ -98,10 +98,12 @@ class BasicWorldDemo {
 
     const domEvents = new THREEx.DomEvents(this._camera, this._threejs.domElement)
     domEvents.addEventListener(cube, 'click', event => {
+      window.location.replace('/Blast-From-The-past/gameStarter.html')
       window.location.replace('/gameStarter.html')
     })
 
     domEvents.addEventListener(cube2, 'click', event => {
+      window.location.replace('/Blast-From-The-past/Timeline/timeline.html')
       window.location.replace('/Timeline/timeline.html')
     })
 
